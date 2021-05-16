@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jumpcharacter()">
+<head>
+    <meta charset="UTF-8">
+    <title>Dino Game</title>
+    <link rel='shortcut icon' type='image/x-icon' href='https://trex-runner.com/favicon.ico'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body onload="resize()">
+    <img id="character" src="https://rb.gy/ozinc2">
+    <img id="cactus" src="https://rb.gy/vdxt45">
+    <audio id="jumpaudio" src="https://dinogame.pzrepl.repl.co/jump.mp3"></audio>
+    <audio id="deadaudio" src="https://dinogame.pzrepl.repl.co/dead.mp3"></audio>
+    <audio id="reachedaudio" src="https://dinogame.pzrepl.repl.co/reached.mp3"></audio>
+    <vl id="ground"></vl>
+    <p id="entirescore">Score: <span id="score">0</span></p>
+    <center><p id="gameover">GAME OVER</p></center>
+    <center><img id="restartbutton" onclick="restart()" src="https://rb.gy/l7kh5b"></center>
+    <center><p id="pass">You Passed the First Round!</p></center>
+    <img id="door" src="https://rb.gy/7k4zpp">
+    <a href="https://trexrunner.tk/mobile/lvl2"><button id="nextlevel">Next Level &raquo;</button></a>
+</body>
+<script src="script.js"></script>
+</html>
