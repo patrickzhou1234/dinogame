@@ -1,0 +1,85 @@
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+  background-color: purple;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+#background-image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none; 
+  -webkit-user-drag: none;
+  border: none;
+  cursor: pointer;
+}
+
+.selectortype {
+  animation: buttons 8s infinite linear;
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#mobile {
+  top: 20vh;
+}
+
+#desktop {
+  top: 40vh;
+}
+
+#howtobutton {
+  top: 60vh;
+}
+
+#howtotext {
+  position: absolute;
+  width: 20vh;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 80vh;
+  background-color: aqua;
+  display: none;
+}
+
+@keyframes buttons {
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: green;}
+  75% {background-color: aqua;}
+  100% {background-color: blue;}
+}
