@@ -1,0 +1,136 @@
+html {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Press Start 2P', cursive;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;  
+  -webkit-user-drag: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;  
+  -webkit-user-drag: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;  
+  -webkit-user-drag: none;
+}
+
+#nextlevel {
+  border: none;
+  animation: button 8s infinite ease;
+  position: absolute;
+  display: none;
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+  top: 0px;
+  left: calc(100vw - 25vh);
+}
+
+#door {
+  position: absolute;
+  display: none;
+  width: 25vh;
+  height: 25vh;
+  top: 25vh;
+  left: calc(100vw - 25vh);
+  z-index: -1;
+}
+
+#pass {
+  display: none;
+}
+
+#entirescore {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gameover {
+  display: none;
+}
+
+#restartbutton {
+  position: absolute;
+  top: calc(25vh - 15px);
+  left: calc(50vw - 17px);
+  display: none;
+  cursor: pointer;
+}
+
+#ground {
+  position: absolute;
+  left: 0px;
+  height: 7px;
+  border-left: 1px solid green;
+}
+
+#cactus {
+  position: absolute;
+  animation: cactusmove 1s infinite linear;
+}
+
+#character {
+  position: absolute;
+  left: 0px;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.dinotodoor {
+  animation: dinotodoor 3s ease;
+}
+
+.animate {
+  animation: jump 0.6s linear;
+}
+
+@keyframes dinotodoor {
+  100% {left: calc(100vw - 25vh)}
+}
+
+@keyframes cactusmove {
+  0%{left: calc(100vw - 25vh)}
+  100%{left: 0px;}
+}
+
+@keyframes jump{
+  0% {top: 25vh;}
+	10% {top: 20vh;}
+  20% {top: 15vh;}
+  30% {top: 10vh;}
+  40% {top: 5vh;}
+  50% {top: 0vh;}
+	60% {top: 5vh;}
+  70% {top: 10vh;}
+  80% {top: 15vh;}
+  90% {top: 20vh;}
+  100% {top: 25vh;}
+}
+
+@keyframes button {
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: green}
+  75% {background-color: aqua}
+  100% {background-color: blue}
+}
